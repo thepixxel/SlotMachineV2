@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <meta name="interface" content="desktop"/>
+
+    <title>Slots</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/slot.css"/>
+    <link type="text/css" rel="stylesheet" href="css/slide.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="css/cover.css"/>
+    <link rel="stylesheet" href="css/social-share-kit.css" type="text/css">
+    
+
+</head>
+<body>
+<div id="viewport">
+   <div class="site-wrapper hidden-xs">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Juega y Gana!!!</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="index.html">Inicio</a></li>
+                  <li class="active"><a href="#">Juego</a></li>
+                  <li><a href="leaderboard.html">Posiciones</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+   </div>
+  </div>
+    <div id="container">
+      </br></br>
+       <a href=index.html><img src="img/logo.png" class="img-responsive" alt="Tampico"></a>
+        <div id="header">
+            <h3><b><i>!Al mejor de tres!</i></b></h3>
+            <h4><b><i>juega y reta a un amigo.</i></b></h4>
+        </div>
+        <div id="reels">
+            <canvas id="canvas1" width="70" height="300"></canvas>
+            <canvas id="canvas2" width="70" height="300"></canvas>
+            <canvas id="canvas3" width="70" height="300"></canvas>
+            <div id="overlay">
+                <div id="winline"></div>
+            </div>
+            <div id="results">
+                <div id="status"></div></br>
+                <a href="#" class="ssk ssk-text ssk-facebook">Compartir en Facebook</a>
+                <a href="#" class="ssk ssk-text ssk-whatsapp">Compartir en Whatsapp</a>
+            </div>
+            <!-- Loading overlay -->
+            <div id="loading">
+                <p>Cargando..</p>
+                <div id="progressbar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="buttons">
+            <div id="play" class="button button-default">Jugar</div>
+        </div>
+
+    </div>
+
+    
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/slot.js"></script>
+<script type="text/javascript">$(function () { SlotGame(); });</script>
+<script type="text/javascript" src="js/slide.js"></script>
+</body>
+</html>
